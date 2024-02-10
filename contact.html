@@ -17,7 +17,9 @@
             padding: 10px;
             border: 1px solid #ccc;
         }
+
     </style>
+    <link rel="stylesheet" href="styles/toDo.css">
     <script src="js/pageLoadTime.js"></script>
     <script src="js/activeMenu.js"></script>
 </head>
@@ -43,6 +45,23 @@
         </address>
         <div id="loadTimeInfo"></div>
     </section>
+
+    <section class="todolist">
+        <div class="container">
+            <div class="preloader"></div>
+            <div id="todoList">
+                <h1>Список моих дел</h1>
+                <form id="todoForm">
+                    <label for="taskInput">Новая задача:</label>
+                    <input type="text" id="taskInput" name="taskInput" required />
+                    <button type="submit">Добавить в список</button>
+                </form>
+                <ul id="taskList"></ul>
+            </div>
+        </div>
+    </section>
+
+
 </main>
 
 <aside>
@@ -55,10 +74,11 @@
         <li>Участием в хакатонах и IT-мероприятиях</li>
     </ul>
     <p>Буду рад поделиться опытом и идеями в этих областях. Свяжитесь со мной, если у вас есть вопросы!!!</p>
-</aside>
 
+</aside>
 <footer class="sticky-footer">
     <p>&copy; 2023 Кичмарев Александр. Все права не защищены.</p>
 </footer>
+<script src="js/fetchData.js"></script>
 </body>
 </html>
