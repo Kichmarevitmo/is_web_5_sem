@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/outlines.css">
+    <title>Конструктор таблицы</title>
+</head>
+<body>
+<header>
+    <h1>Конструктор таблицы</h1>
+</header>
+
+<main>
+    <form id="tableForm">
+        <label for="weekDays">Выберите дни недели:</label>
+        <select id="weekDays" name="weekDays" required>
+            <option value="5">5 дней</option>
+            <option value="6">6 дней</option>
+        </select>
+
+        <label for="maxLessons">Количество занятий каждый день:</label>
+        <input type="number" id="maxLessons" name="maxLessons" min="1" value="5" required>
+
+        <label for="subjects">Предметы (через запятую):</label>
+        <input type="text" id="subjects" name="subjects" required>
+
+        <button type="submit">Сгенерировать таблицу</button>
+    </form>
+
+    <div id="tableContainer"></div>
+
+    <div id="messageContainer"></div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Кичмарев Александр. Все права не защищены.</p>
+</footer>
+
+
+</body>
+</html>

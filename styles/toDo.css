@@ -1,0 +1,172 @@
+
+.preloader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.content {
+    text-align: left;
+    display: none;
+}
+
+.todolist {
+    width: 50%;
+    float: left;
+    font-family: Arial, sans-serif;
+}
+
+#todoList {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+input[type="text"] {
+    width: calc(100% - 85px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todolist {
+    font-family: Arial, sans-serif;
+    /*max-width: 600px;*/
+    /*margin: 0 auto;*/
+    /*padding: 20px;*/
+    /*background-color: #f9f9f9;*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для заголовка */
+.todolist h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Стиль для формы */
+#todoForm {
+    margin-bottom: 20px;
+}
+
+#todoForm label {
+    font-weight: bold;
+}
+
+#todoForm input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#todoForm button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#todoForm button:hover {
+    background-color: #2980b9;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+#taskList li h3 {
+    flex-grow: 1;
+    margin: 0;
+}
+
+.completed {
+    text-decoration: line-through red;
+}
+
+.toggleButton, .deleteButton {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggleButton {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.toggleButton:hover, .deleteButton:hover {
+    opacity: 0.8;
+}

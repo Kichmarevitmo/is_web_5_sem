@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="портфолио, резюме, веб-разработка, HTML">
+    <meta name="description" content="Сайт-портфолио с примерами работ и контактной информацией">
+    <title>Портфолио - Кичмарев Александр</title>
+    <link rel="stylesheet" href="styles/outlines.css">
+    <style>
+    </style>
+    <script src="js/pageLoadTime.js"></script>
+    <script src="js/activeMenu.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/swipper.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+<header>
+    <img src="images/logo.jpg" alt="Logo" width="200" height="200">
+    <h1><em>Kichmarev's portfolio</em></h1>
+    <nav>
+        <ul>
+            <li><a id="aboutLink" href="index.html">Обо мне</a></li>
+            <li><a id="portfolioLink" href="portfolio.html">Портфолио</a></li>
+            <li><a id="contactLink" href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <article style="background-color: white; border: 1px solid white;">
+            <h3>Проект 1: "Онлайн-магазин Art"</h3>
+            <p><em>Этот проект представляет собой онлайн-магазин,</em> специализирующийся на уникальных и ручной работы изделиях от талантливых художников и мастеров. <strong>HandCraftedHub предоставляет платформу для создания виртуального рынка,</strong> где покупатели могут находить и заказывать уникальные предметы искусства. Мы реализовали интуитивно понятный интерфейс для поиска и фильтрации товаров, а также безопасную систему онлайн-оплаты. <em>Каждый продукт снабжен подробным описанием, фотографиями высокого разрешения и отзывами покупателей.</em></p>
+            <section class="skills" id="art">
+                <div class="container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="places-card">
+                                    <img
+                                            src="images/art_project_image1.jpg"
+                                            alt="Screen1"
+                                            class="places-card-picture img-fluid"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="places-card">
+                                    <img
+                                            src="images/art_project_image2.jpg"
+                                            alt="Screen2"
+                                            class="places-card-picture img-fluid"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="places-card">
+                                    <img
+                                            src="images/art_project_image1.jpg"
+                                            alt="Screen3"
+                                            class="places-card-picture img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article style="background-color: white; border: 1px solid white;">
+            <h3>Проект 2: "Социальная сеть для обмена книгами - ReadConnect"</h3>
+            <p><em>ReadConnect - это веб-приложение,</em> созданное для любителей чтения, которые желают обмениваться книгами и общаться на тему литературы. Пользователи могут создавать профили, добавлять свои любимые книги в виртуальную библиотеку, а также предлагать обмен своими книгами с другими членами сообщества. Мы внедрили систему рекомендаций на основе предпочтений пользователей, форум для обсуждения книг, и систему уведомлений об обменах. <em>ReadConnect способствует распространению читательской культуры и создает вдохновляющее виртуальное сообщество книголюбов.</em></p>
+            <section class="photoPortfolio" id="readConnect">
+                <div class="container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="places-card">
+                                    <img
+                                            src="images/readconnect_project_image1.jpg"
+                                            alt="Screen1"
+                                            class="places-card-picture img-fluid"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="places-card">
+                                    <img
+                                            src="images/readconnect_project_image2.jpg"
+                                            alt="Screen2"
+                                            class="places-card-picture img-fluid"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="places-card">
+                                    <img
+                                            src="images/readconnect_project_image1.jpg"
+                                            alt="Screen3"
+                                            class="places-card-picture img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <div id="loadTimeInfo"></div>
+    </section>
+</main>
+
+<aside>
+    <h2>Дополнительная информация</h2>
+    <p>Привет! Я также увлекаюсь...</p>
+    <ul>
+        <li>Фотографией</li>
+        <li>Музыкой и игрой на гитаре</li>
+        <li>Чтением научной фантастики</li>
+        <li>Участием в хакатонах и IT-мероприятиях</li>
+    </ul>
+    <p>Буду рад поделиться опытом и идеями в этих областях. Свяжитесь со мной, если у вас есть вопросы!!!</p>
+</aside>
+
+<footer class="sticky-footer">
+    <p>&copy; 2023 Кичмарев Александр. Все права не защищены.</p>
+</footer>
+<script>
+    var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+<script src="js/tableGenerator..js"></script>
+</body>
+</html>
